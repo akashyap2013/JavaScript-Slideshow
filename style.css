@@ -1,0 +1,34 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    border: 0;
+    background-size: cover;
+}
+
+.clip-circle {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    clip-path: circle(0% at center);
+    transition: clip-path 1.5s ease;
+}
+
+.active {
+    clip-path: circle(100% at center);
+}
